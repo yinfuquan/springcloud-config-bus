@@ -1,0 +1,19 @@
+server:
+  port: 9999
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${EUREKA_ZONE_HOST:localhost}:${EUREKA_ZONE_PORT:8761}/eureka/
+spring:
+  rabbitmq:
+    host: ${RABBIT_MQ_HOST:192.168.220.169}
+    port: ${RABBIT_MQ_PORT:5672}
+    username: ${RABBIT_MQ_USERNAME:rabbit}
+    password: ${RABBIT_MQ_PASSWORD:123456}
+##开启bus刷新
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-bus" />
+        <module name="springeureka" />
+        <module name="spring-provider" />
+        <module name="spring-config" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring-bus" target="1.8" />
+      <module name="spring-config" target="1.8" />
+      <module name="spring-provider" target="1.8" />
+      <module name="springeureka" target="1.8" />
+      <module name="test-bus" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-bus" options="-parameters" />
+      <module name="spring-config" options="-parameters" />
+      <module name="spring-provider" options="-parameters" />
+      <module name="springeureka" options="-parameters" />
+    </option>
+  </component>
+</project>
